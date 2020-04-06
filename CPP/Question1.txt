@@ -1,12 +1,12 @@
 
 #include <iostream>
-#include <stirng.h>
+#include <string.h>   //spelling mistake in the header file//
 int main()
 {
 	char str[100];
 	char ch; 
 	int Lindex,Findex; 
-	cin>>str
+	cin>>str; //";" missing //
 	cin>>ch;
 	Lindex = getLIndex(str,ch);
 	Findex= getFIndex(str,ch);
@@ -16,13 +16,13 @@ int main()
 		cout<<"NOT FOUND"<<endl;
 	return 0;	
 }
-int getLIndex(char string,char  c)
+int getLIndex(char string,char c) //declaration mistake //
 {
 	int size = len(string),i=0;
 	while(i<size)
 	{
 		
-		if(string[i]=c){
+		if(string[i]==c)// equality sign//{
 		    return i;
 		   break;
 		}	
@@ -30,7 +30,8 @@ int getLIndex(char string,char  c)
 	}
 	
 }
-int getFindex(string, c)
+int getFIndex(char string,char c
+) //function spelling //
 {
 	int size = len(string);
 	int i=size; 
