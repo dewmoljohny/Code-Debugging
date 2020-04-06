@@ -1,16 +1,17 @@
 
 #include<iostream>
+#include<mat.h>
 using namespace std;
 int main(){
 int num,d=0,n,r,p=0,a=1;
 char choice;
-cin<<num;
-cin<<choice;
-swithc(choice)
+cin>>num; // cascade operator //
+cin>>choice;// cascade operator //
+switch(choice) // switch spelling//
 {
-case a 
+case 'a': // ":" missing,within quotes //
 n=num;
-while(n==0)
+while(n==0) 
 {
 n=n/10;
 d++;
@@ -19,20 +20,21 @@ n=num;
 while(n!=0)
 {
 r=n%10;
-a==a*sqr(r,d);
+a=a*pow(r,d); // assign symbol,power function is to be used //
 n=n/10;
 }
 cout<<a<<"\n";  
-case p 
+break; // exit the loop //
+case 'p': // ":" missing , within quotes// 
 n=num;
 while(n!=0)
 {
 r=n%10;
-p==p+10+r;
+p=p+10+r; // assign symbol //
 n=n/10;
+continue;
 }
 cout<<p<<"\n";
-continue;
 }
 }
 
